@@ -1,0 +1,30 @@
+==============================================================================
+  Notes
+==============================================================================
+
+Setting up the DB
+-----------------------------------------------------------------------
+    The db/ folder contains a createDb.sh script that uses the current
+  session user to create a mysql database on localhost and load the
+  test_data.sql file.
+
+    The dropDb.sh should remove the database when done.
+
+    You will have to set a db username and password in the
+  FileProcessorTest.php script and in the main.php script
+
+
+
+Composer
+-----------------------------------------------------------------------
+    I am using composer for requirements to keep the Unit Tests and
+  FileProcessor class available to one another in different locations.
+
+
+Running Demo of Class
+-----------------------------------------------------------------------
+    You should be able to run the "./go" command to invoke main.php
+  from the top-level in the application folder.
+
+    You should be able to run "phpunit" from the top-level in the
+  application folder.
